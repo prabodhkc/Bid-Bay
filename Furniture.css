@@ -90,8 +90,17 @@ nav {
     border-radius: 4px;
     font-weight: bold;
 }
+.banner{
+    background:linear-gradient(135deg, #667eea 0%, #764ba2 100%) ;
+    padding: 20px;
+    margin: 0px;
+    border-radius: 10px;
+}
 .banner img{
-    width: 100vw;
+    width: 80vw;
+    margin: auto;
+    display: block ;
+   
 }
 .specs{
     display: flex;
@@ -190,6 +199,12 @@ nav {
     .Dine, .Bed, .Living {
         flex: 1; 
     }
+    .banner{
+    background:linear-gradient(135deg, #667eea 0%, #764ba2 100%) ;
+    padding: 20px;
+    margin: 0px 40px;
+    border-radius: 10px;
+}
     .banner img{
         display: block;
         width: 60vw;
