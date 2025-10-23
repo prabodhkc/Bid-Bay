@@ -1,0 +1,122 @@
+*,body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: antiquewhite;
+}
+.Top_Bar{
+    background-color: beige;
+    padding: 10px;
+    text-align: center;
+}
+.Top_Bar h1{
+    margin: auto;   
+}
+.banner img{
+    width: 100vw;
+}
+.specs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:20px;
+}
+.Dine, .Bed,.Living{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+} 
+.Dine img, .Bed img,.Living img{
+    display: block;
+    margin: auto;
+    width: 80vw;
+}
+.Availible{
+    background-color: #DAF0F7;
+    padding: 10px;
+    text-align: center;
+}
+.Items-List{
+
+}
+.Item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #DAF0F7;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.Item img{
+    display: block;
+    margin: auto;
+    width: 80vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet styles (768px+) */
+@media screen and (min-width: 768px) {
+    .specs{
+        flex-direction: row;
+    }
+    .Dine, .Bed, .Living {
+        flex: 1; 
+    }
+    .banner img{
+        display: block;
+        width: 60vw;
+        margin: auto;
+    }
+    .Dine img, .Bed img,.Living img{
+    display: block;
+    margin: auto;
+    width: 25vw;
+    }
+    .Items-List ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:10px
+    }
+    .Item img{
+        width: 25vw;
+        display: block;
+        margin: auto;
+    }
+}
+
+
+/* Desktop styles (1024px+) */
+@media screen and (min-width: 1024px) {
+    
+    
+}
+
+/* Large Desktop styles (1200px+) */
+@media screen and (min-width: 1200px) {
+    
+}
+
+    
+
+
