@@ -3,15 +3,92 @@
     padding: 0;
 }
 body{
-    background-color: antiquewhite;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
 }
-.Top_Bar{
-    background-color: beige;
-    padding: 10px;
-    text-align: center;
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
-.Top_Bar h1{
-    margin: auto;   
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.fancy{
+    font-family:'Times New Roman', Times, serif,cursive;
+}
+
+.search-bar {
+    display: flex;
+    flex: 1;
+    max-width: 500px;
+    margin: 0 2rem;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+}
+
+.search-bar button {
+    padding: 0.75rem 1.5rem;
+    background: #f59e0b;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.search-bar button:hover {
+    background: #d97706;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+.btn-primary {
+    background: #f59e0b;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    font-weight: bold;
 }
 .banner img{
     width: 100vw;
@@ -26,13 +103,22 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: white;
+    background:lavender;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.Dine h3, .Bed h3,.Living h3{
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 5px;
+    color: white;
 }
 .Dine:hover, .Bed:hover,.Living:hover{
    cursor: pointer;
+   transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 } 
 .Dine img, .Bed img,.Living img{
     display: block;
@@ -40,9 +126,12 @@ body{
     width: 80vw;
 }
 .Availible{
-    background-color: #DAF0F7;
+    background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     padding: 10px;
     text-align: center;
+}
+.Availible{
+    color: white;
 }
 .Items-List{
     list-style: none;
@@ -51,10 +140,22 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #DAF0F7;
+    background: lavender;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.Item h3{
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 5px;
+    color: white;
+}
+.Item:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 .Item img{
     display: block;
