@@ -13,7 +13,6 @@ body {
     background-color: #f9fafb;
 }
 
-/* Header & Navigation */
 
 header {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -36,11 +35,65 @@ nav {
 }
 
 .logo {
-    font-size: 2 rem;
+    font-size: 2rem;
     font-weight: bold;
     text-decoration: none;
     color: white;
 }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbutton {
+  background: transparent;
+color: white;
+font-size: 1rem;
+border: none;
+cursor: pointer;
+font-weight: 500;
+padding: 0.5rem 1rem;
+transition: opacity 0.3s;
+}
+
+.dropbutton:hover {
+  opacity: 0.8;
+}
+
+.dropdown-content{
+  display: none;
+position: absolute;
+background-color: #5568d3;
+min-width: 160px;
+box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+border-radius: 4px;
+z-index: 1000;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  display: block;
+  font-size: 0.95rem;
+}
+
+.dropdown-content a:hover {
+  background-color: #f3f4f6;
+  color: #667eea;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown:hover .dropbtn::after {
+  content: ' ▲';
+  font-size: 0.8rem;
+}
+
 
 .search-bar {
     display: flex;
@@ -89,14 +142,16 @@ nav {
     opacity: 0.8;
 }
 
-/*Hero Section */
 
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 4rem 0;
-    text-align: center;
-  }
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('img/electronic_cover.jpg') center center / cover no-repeat;
+  color: white;
+  padding: 6rem 0;
+  text-align: center;
+}
+
 
   .hero h1 {
     font-size: 3rem;
@@ -143,7 +198,7 @@ nav {
     border: 2px solid white;
   }
   
-  /* Auctions */
+
   .featured-auctions {
     padding: 3rem 0;
   }
@@ -222,7 +277,7 @@ nav {
     background: #5568d3;
   }
 
-  /*Footer */
+
   footer {
     background: #1f2937;
     color: white;
@@ -252,7 +307,7 @@ nav {
     color: #9ca3af;
 }
 
-/*Responsive */
+
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2rem;

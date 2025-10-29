@@ -18,9 +18,15 @@
           </div>
         
           <div class="nav-links">
-            <a href="BidPayHome.html">Home</a>
-            <a href="Electronics.html">Electronics</a>
-            <a href="Furniture.html">Furniture</a>
+            <div class="dropdown">
+              <button class="dropbutton"> Pages ▾</button>
+                <div class="dropdown-content">
+                  <a href="BidPayHome.html">Home</a>
+                  <a href="Electronics.html">Electronics</a>
+                  <a href="Furniture.html">Furniture</a>
+                  <a href="vehicles.html">Cars</a>
+                </div>
+          </div>
             <a href="#">Watch List</a>
             <a href="#">My BidPay</a>
             <a href="#" class="btn-primary">Sign In</a>
@@ -66,69 +72,114 @@
           </a>
           
 
+          <a href="vehicles.html" style="text-decoration: none">
           <div class="category-card">
             <div class="category-icon">🚗</div>
             <h3>cars</h3>
           </div>
+        </a>
         </div>
       </div>
     </section>
 
-    <section class="featured-auctions">
+    <section class="featured-auctions" id="auctions">
       <div class="container">
-        <h2 class="section-title">Trending Auctions</h2>
-        <div class="auction-grid">
-          <div class="auction-card">
-            <div class="auction-image">📷</div>
-            <div class="auction-details">
-              <h3>Professional Digital Camera</h3>
-              <div class="auction-price">$425.00</div>
-              <div class="auction-info">
-                <span>15 bids</span>
-                <span>2h 34m left</span>
+          <h2 class="section-title">Top Auction Items</h2>
+
+          <div class="auction-grid">
+              <div class="auction-card">
+                  <div class="auction-image">
+                      <img src="img/laptop.jpg" alt="Laptop" />
+                  </div>
+                  <div class="auction-details">
+                      <h3> Apple MacBook Pro 14" M3</h3>
+                      <p class="auction-price">$1,500</p>
+                      <div class="auction-info">
+                          <span> Ends in: 2h 35m</span>
+                          <span> 32 bids</span>
+                      </div>
+                      <button class="bid-btn">Place Bid</button>
+                  </div>
               </div>
-              <button class="bid-btn">Place Bid</button>
-            </div>
-          </div>
-          <div class="auction-card">
-            <div class="auction-image">⌚</div>
-            <div class="auction-details">
-              <h3>Luxury Smart Watch</h3>
-              <div class="auction-price">$285.00</div>
-              <div class="auction-info">
-                <span>23 bids</span>
-                <span>5h 12m left</span>
+
+              <div class="auction-card">
+                  <div class="auction-image">
+                      <img src="img/ps5.jpg" alt="PS5 Console" />
+                  </div>
+                  <div class="auction-details">
+                      <h3> Sony PlayStation 5 (Disc Edition)</h3>
+                      <p class="auction-price">$620</p>
+                      <div class="auction-info">
+                          <span> Ends in: 5h 10m</span>
+                          <span> 28 bids</span>
+                      </div>
+                      <button class="bid-btn">Place Bid</button>
+                  </div>
               </div>
-              <button class="bid-btn">Place Bid</button>
-            </div>
-          </div>
-          <div class="auction-card">
-            <div class="auction-image">🎮</div>
-            <div class="auction-details">
-              <h3>Gaming Console Bundle</h3>
-              <div class="auction-price">$350.00</div>
-              <div class="auction-info">
-                <span>8 bids</span>
-                <span>1h 45m left</span>
+              <div class="auction-card">
+                <div class="auction-image">
+                    <img src="img/equinox.jpg" alt="Equinox" />
+                </div>
+                <div class="auction-details">
+                  <h3>2018 Cheverolet Equinox</h3>
+                  <div class="auction-price">$19,800</div>
+                  <div class="auction-info">
+                    <span> Ends in: 9h 55m</span>
+                    <span>15 bids</span>
+                  </div>
+                  <button class="bid-btn">Place Bid</button>
+                </div>
               </div>
-              <button class="bid-btn">Place Bid</button>
-            </div>
+
+              <div class="auction-card">
+                  <div class="auction-image">
+                    <img src="img/smartwatch.jpg" alt="Smartwatch" />
+                  </div>
+                  <div class="auction-details">
+                    <h3>Samsung Galaxy Watch 6</h3>
+                    <p class="auction-price">$190</p>
+                    <div class="auction-info">
+                      <span>Ends in: 6h 20m</span>
+                      <span>8 bids</span>
+                    </div>
+                    <button class="bid-btn">Place Bid</button>
+                  </div>
+                </div>
+
+                <div class="auction-card">
+                  <div class="auction-image">
+                    <img src="img/camera.jpg" alt="Camera" />
+                  </div>
+                  <div class="auction-details">
+                    <h3> Canon Camera</h3>
+                    <p class="auction-price">$360</p>
+                    <div class="auction-info">
+                      <span>Ends in: 2h 40m</span>
+                      <span>7 bids</span>
+                    </div>
+                    <button class="bid-btn">Place Bid</button>
+                  </div>
+                </div>
+
+                <div class="auction-card">
+                  <div class="auction-image">
+                    <img src="img/tv.jpg" alt="TV" />
+                  </div>
+                  <div class="auction-details">
+                    <h3> 45' Samsung 4K, HD TV</h3>
+                    <p class="auction-price">$1260</p>
+                    <div class="auction-info">
+                      <span>Ends in: 7h 20m</span>
+                      <span>6 bids</span>
+                    </div>
+                    <button class="bid-btn">Place Bid</button>
+                  </div>
+                </div>
+
+
           </div>
-          <div class="auction-card">
-            <div class="auction-image">💎</div>
-            <div class="auction-details">
-              <h3>Vintage Jewelry Set</h3>
-              <div class="auction-price">$520.00</div>
-              <div class="auction-info">
-                <span>31 bids</span>
-                <span>3h 22m left</span>
-              </div>
-              <button class="bid-btn">Place Bid</button>
-            </div>
-          </div>
-        </div>
       </div>
-    </section>
+  </section>
 
     <footer>
       <div class="container">
